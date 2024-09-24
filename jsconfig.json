@@ -1,0 +1,27 @@
+{
+    "compilerOptions": {
+        "checkJs": true,
+        "allowUnreachableCode": false,
+        "alwaysStrict": true,
+        "exactOptionalPropertyTypes": true,
+        "noImplicitAny": true,
+        "noImplicitReturns": true,
+        "noPropertyAccessFromIndexSignature": true,
+        "noUncheckedIndexedAccess": true,
+        "noUnusedLocals": true,
+        "noUnusedParameters": true,
+        "strictFunctionTypes": true,
+        "strictNullChecks": true,
+        "useUnknownInCatchVariables": true,
+        "resolveJsonModule": true, // import json only for type checking
+        "moduleResolution": "bundler", // import json only for type checking
+        "allowImportingTsExtensions": true, // import types from ts file
+        "target": "ESNext", // top level await
+        "module": "ESNext" // top level await
+    },
+    "include": [
+        "./**/*.js",
+        "./**/*.mjs",
+        "./**/*.ts" // use for json type validation because json import cannot be executed in js
+    ]
+}

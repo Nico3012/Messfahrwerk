@@ -1,0 +1,51 @@
+body {
+    margin: 0;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+
+    display: flex;
+    flex-direction: row;
+}
+
+#sensor-selection {
+    padding: 8px;
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(127, 127, 127, 0.1);
+}
+
+#sensor-selection label {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+#sensor-selection label input {
+    appearance: none;
+
+    margin: 8px;
+    padding: 8px;
+    border-radius: 4px;
+
+    order: 1;
+
+    background-color: red;
+}
+
+#sensor-selection label span {
+    margin: 8px;
+
+    order: 2;
+}
+
+#sensor-selection label input:checked {
+    background-color: green;
+}
+
+canvas {
+    width: 0;
+    flex-grow: 1;
+}
